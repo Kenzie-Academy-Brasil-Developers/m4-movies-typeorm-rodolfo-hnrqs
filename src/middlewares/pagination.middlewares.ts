@@ -11,8 +11,8 @@ const pagination = (req: Request, res: Response, next: NextFunction): void => {
   const querySort: any = req.query.sort;
   const queryOrder: any = req.query.order;
 
-  const orderOptions: Array<string> = ["asc", "desc"];
-  const sortOptions: Array<string> = ["price"];
+  const orderOptions: Array<string> = ["asc","desc"];
+  const sortOptions: Array<string> = ["price", "duration"];
 
   let sort: string;
   let order: string;
